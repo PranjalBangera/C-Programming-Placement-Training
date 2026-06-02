@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[10], n;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter elements:\n");
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        int count = 1;
+
+        for(int j = i + 1; j < n; j++)
+        {
+            if(a[i] == a[j])
+            {
+                count++;
+            }
+        }
+
+        if(count > 1)
+        {
+            int first = 1;
+
+            for(int k = 0; k < i; k++)
+            {
+                if(a[k] == a[i])
+                {
+                    first = 0;
+                    break;
+                }
+            }
+
+            if(first)
+            {
+                printf("%d appears %d times\n", a[i], count);
+            }
+        }
+    }
+
+    return 0;
+}
