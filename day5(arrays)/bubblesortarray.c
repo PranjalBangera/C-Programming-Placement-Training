@@ -14,7 +14,7 @@ int main()
             }
         }
     }
-    for(int i=0;i<5;i++)
+    for(int i=4;0<=i;i--)
     printf("%d\n",arr[i]);
     return 0;
 }
