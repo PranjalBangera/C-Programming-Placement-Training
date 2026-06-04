@@ -2,13 +2,13 @@
 #include <stdio.h>
 int main()
 {
-    int age = 20;
-    int *ptr = &age; // ptr is a pointer to an integer and it holds the address of variable age
+    int salary = 25000;
+    int *ptr = &salary; // ptr is a pointer to an integer and it holds the address of variable age
 
-    printf("Value of age: = %d\n", age); // Output: 20
-    printf("Address of age: = %p\n", (void*)&age); // Output: Address of age
-    printf("Value of pointer: = %p\n", (void*)ptr); // Output: Address of age (same as above)
-    printf("Deference: = %d\n", *ptr); // Output: 20
+    printf("Value of salary: = %d\n", salary); // Output: 25000
+    printf("Address of salary: = %p\n", &salary); // Output: Address of salary
+    printf("Value of pointer: = %p\n",ptr); // Output: Address of salary (same as above)
+    printf("Deference: = %d\n", *ptr); // Output: 25000
 
     return 0;
 }
