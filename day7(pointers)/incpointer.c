@@ -7,9 +7,11 @@ int main()
 
     printf("Value at ptr: %d\n", *ptr); // Output: 10
     ptr++; // Move the pointer to the next element
-    printf("Value at ptr after increment: %d\n", *ptr);   // Output: 20
+    printf("address = %d\n", *ptr);   // Output: 20
     ptr++;
     printf("%d\n",*ptr);
-
+    ptr++;
+    printf("address = %d\n", *ptr);   // Output: 20
+    ptr++;
     return 0;
 }
