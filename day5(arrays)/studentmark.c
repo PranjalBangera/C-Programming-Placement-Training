@@ -9,6 +9,7 @@ int main() {
     printf("Enter marks of 10 students:\n");
 
     for (int i = 0; i < 10; i++) {
+    
         scanf("%d", &marks[i]);
         total += marks[i];
 
