@@ -2,7 +2,8 @@
 
 int main(int argc,char *argv[]);
 {
-    printf("arguments=&d\n",argc);
+    char argc=("a.exe","abc","CSE");
+    argc=strlen(arg);
 
     for(int i=0;i<argc;i++)
     {
