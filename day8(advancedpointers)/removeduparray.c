@@ -8,9 +8,9 @@ int main()
     for(int i=1;i<n;i++)
     {
     if(arr[i]!=arr[j])
-    {printf("%d",arr[i]);
+    {printf("After Removing Duplicates: %d\n",arr[i]);
 }
 return 0;
 
 
-}
+}}
